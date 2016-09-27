@@ -1,0 +1,1810 @@
+
+
+Started GET "/" for ::1 at 2016-09-27 15:36:33 -0700
+Processing by EncodingsController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template encodings/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/melissa/ada/rails/caesar-cipher/app/views"
+):
+  actionview (4.2.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.7) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.7) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.7) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (44.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:38:01 -0700
+Processing by EncodingsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template encodings/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/melissa/ada/rails/caesar-cipher/app/views"
+):
+  actionview (4.2.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.7) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.7) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.7) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (40.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:40:56 -0700
+Processing by EncodingsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template encodings/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/melissa/ada/rails/caesar-cipher/app/views"
+):
+  actionview (4.2.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.7) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.7) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.7) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (44.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:40:59 -0700
+Processing by EncodingsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template encodings/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/melissa/ada/rails/caesar-cipher/app/views"
+):
+  actionview (4.2.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.7) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.7) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.7) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (44.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:44:30 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 391ms (Views: 390.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/encodings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/assets/encodings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-27 15:44:31 -0700
+
+
+Started GET "/" for ::1 at 2016-09-27 15:46:55 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2016-09-27 15:47:17 -0700
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.3ms)
+
+
+Started GET "/new" for ::1 at 2016-09-27 15:50:13 -0700
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:51:32 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:52:33 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (28.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `new_path' for #<#<Class:0x007fcda91f5af8>:0x007fcda16fe278>
+Did you mean?  view_paths):
+    2: 
+    3: <p><%= @message %></p>
+    4: 
+    5: <h2> <%=link_to( "Encodings", new_path) %></h2>
+  app/views/encodings/index.html.erb:5:in `_app_views_encodings_index_html_erb___1822353469301705420_70260576741220'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.5ms)
+
+
+Started GET "/new" for ::1 at 2016-09-27 15:53:08 -0700
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.4ms)
+
+
+Started GET "/new" for ::1 at 2016-09-27 15:54:34 -0700
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:54:37 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (0.8ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2016-09-27 15:55:01 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:55:48 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `new_path' for #<#<Class:0x007fcda9267540>:0x007fcda925f368>
+Did you mean?  view_paths):
+    2: 
+    3: <p><%= @message %></p>
+    4: 
+    5: <h2> <%=link_to( "Encodings", new_path) %></h2>
+  app/views/encodings/index.html.erb:5:in `_app_views_encodings_index_html_erb___1822353469301705420_70260576741220'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:56:03 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:58:04 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x007fcda9267540>:0x007fcda943ead0>
+Did you mean?  video_path):
+    2: 
+    3: <p><%= @message %></p>
+    4: 
+    5: <h2> <%=link_to( "Encodings", index_path) %></h2>
+  app/views/encodings/index.html.erb:5:in `_app_views_encodings_index_html_erb___1822353469301705420_70260642409280'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 15:59:08 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show" for ::1 at 2016-09-27 15:59:41 -0700
+
+ActionController::RoutingError (No route matches [GET] "/show"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.2ms)
+
+
+Started GET "/encodings/show" for ::1 at 2016-09-27 15:59:56 -0700
+Processing by EncodingsController#show as HTML
+  Rendered encodings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/nhew" for ::1 at 2016-09-27 16:00:03 -0700
+
+ActionController::RoutingError (No route matches [GET] "/encodings/nhew"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (77.6ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:00:07 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:00:17 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"d", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 16:01:39 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `encodings' for #<#<Class:0x007fcda35d74b0>:0x007fcda8529bf8>
+Did you mean?  encodings_new_url):
+    2: 
+    3: <p><%= @message %></p>
+    4: 
+    5:     <h2> <%=link_to( "Encoding", encodings/index) %></h2>
+  app/views/encodings/index.html.erb:5:in `_app_views_encodings_index_html_erb___1822353469301705420_70260634502180'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 16:06:45 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/melissa/ada/rails/caesar-cipher/app/views/encodings/index.html.erb:5: unknown regexp option - h
+unmatched close parenthesis: /index) );@output_buffer.safe_append='</
+/Users/melissa/ada/rails/caesar-cipher/app/views/encodings/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+...output_buffer.safe_append='</h2>
+...                               ^
+/Users/melissa/ada/rails/caesar-cipher/app/views/encodings/index.html.erb:6: unterminated string meets end of file
+/Users/melissa/ada/rails/caesar-cipher/app/views/encodings/index.html.erb:6: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/encodings/index.html.erb:5: unknown regexp option - h
+  app/views/encodings/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/encodings/index.html.erb:6: unterminated string meets end of file
+  app/views/encodings/index.html.erb:6: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.1ms)
+
+
+Started GET "/encodings/show" for ::1 at 2016-09-27 16:06:54 -0700
+Processing by EncodingsController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/encodings_controller.rb:11:in `show'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.7ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:07:00 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-27 16:07:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-27 16:07:00 -0700
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:07:05 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"k", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/show" for ::1 at 2016-09-27 16:08:32 -0700
+Processing by EncodingsController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/encodings_controller.rb:11:in `show'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 16:08:35 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:08:36 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:08:45 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 16:09:02 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:09:03 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:09:09 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/show" for ::1 at 2016-09-27 16:09:33 -0700
+Processing by EncodingsController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/encodings_controller.rb:11:in `show'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.2ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:09:38 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/show" for ::1 at 2016-09-27 16:09:42 -0700
+Processing by EncodingsController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/encodings_controller.rb:11:in `show'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.3ms)
+
+
+Started GET "/decodings" for ::1 at 2016-09-27 16:15:44 -0700
+
+ActionController::RoutingError (No route matches [GET] "/decodings"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.7ms)
+
+
+Started GET "/decodings" for ::1 at 2016-09-27 16:16:09 -0700
+
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.7ms)
+
+
+Started GET "/decodings" for ::1 at 2016-09-27 16:16:21 -0700
+
+ActionController::RoutingError (No route matches [GET] "/decodings"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.9ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:16:26 -0700
+
+SyntaxError (/Users/melissa/ada/rails/caesar-cipher/app/controllers/decodings_controller.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/decodings_controller.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.5ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:16:41 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/decodings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-27 16:16:41 -0700
+
+
+Started GET "/assets/decodings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-27 16:16:41 -0700
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:16:43 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:16:58 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:17:01 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:17:09 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:17:10 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:17:14 -0700
+
+ActionController::RoutingError (No route matches [POST] "/decodings/show"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.4ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:17:49 -0700
+Processing by DecodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"OLSSV"}
+  Rendered decodings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/show" for ::1 at 2016-09-27 16:22:28 -0700
+Processing by DecodingsController#show as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/decodings_controller.rb:11:in `show'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (77.0ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:22:32 -0700
+Processing by DecodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"OLSSV"}
+  Rendered decodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:22:44 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:22:46 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encoding/index" for ::1 at 2016-09-27 16:23:01 -0700
+
+ActionController::RoutingError (No route matches [GET] "/encoding/index"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.9ms)
+
+
+Started GET "/encodings/index" for ::1 at 2016-09-27 16:23:06 -0700
+Processing by EncodingsController#index as HTML
+  Rendered encodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:23:07 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:23:12 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"y", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:23:19 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:23:20 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:23:23 -0700
+Processing by DecodingsController#show as HTML
+  Parameters: {"shift"=>"y", "message"=>"FCJJM"}
+  Rendered decodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-27 16:27:43 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2016-09-27 16:27:51 -0700
+
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:27:58 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:28:00 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2016-09-27 16:28:42 -0700
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (4.2.7) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.7) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.7) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.7) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.7) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/melissa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.8ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/melissa/.rvm/gems/ruby-2.3.0@rails_gemset/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.1ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:29:05 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:29:41 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:29:42 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:29:47 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"m", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:29:50 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:29:52 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:29:55 -0700
+Processing by DecodingsController#show as HTML
+  Parameters: {"shift"=>"m", "message"=>"TQXXA"}
+  Rendered decodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:30:53 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:30:54 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:35:56 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:36:04 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"h", "message"=>"hello"}
+  Rendered encodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-27 16:36:04 -0700
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:36:09 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:36:47 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:38:22 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/encodings/show" for ::1 at 2016-09-27 16:39:21 -0700
+Processing by EncodingsController#show as HTML
+  Parameters: {"shift"=>"x", "message"=>"goodbye"}
+  Rendered encodings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-27 16:39:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-27 16:39:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-27 16:39:21 -0700
+
+
+Started GET "/encodings/new" for ::1 at 2016-09-27 16:39:23 -0700
+Processing by EncodingsController#new as HTML
+  Rendered encodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:39:24 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/new" for ::1 at 2016-09-27 16:39:25 -0700
+Processing by DecodingsController#new as HTML
+  Rendered decodings/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/decodings/show" for ::1 at 2016-09-27 16:39:29 -0700
+Processing by DecodingsController#show as HTML
+  Parameters: {"shift"=>"x", "message"=>"DLLAYVB"}
+  Rendered decodings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:41:44 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/decodings/index" for ::1 at 2016-09-27 16:41:46 -0700
+Processing by DecodingsController#index as HTML
+  Rendered decodings/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
